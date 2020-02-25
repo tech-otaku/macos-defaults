@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # System Preferences > Date & Time > Time options
-    # Analog
+    # Analogue
     #defaults write com.apple.menuextra.clock IsAnalog -bool true
 
     # Digital
