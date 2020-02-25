@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# See: https://www.tech-otaku.com/mac/setting-the-date-and-time-format-for-the-macos-menu-bar-clock-using-terminal/
+
 # System Preferences > Date & Time > Time options
     # Analogue
     #defaults write com.apple.menuextra.clock IsAnalog -bool true
