@@ -5,7 +5,7 @@
     #defaults write com.apple.menuextra.clock IsAnalog -bool true
 
     # Digital
-msngdefaults write com.apple.menuextra.clock IsAnalog -bool false
+    defaults write com.apple.menuextra.clock IsAnalog -bool false
 
 
 # System Preferences > Date & Time > Flash the time separators
