@@ -232,3 +232,7 @@
 # System Preferences > Date & Time > Show the day of the week - Unchecked
 # System Preferences > Date & Time > Show date - Unchecked
     # defaults write com.apple.menuextra.clock DateFormat -string "h:mm"
+
+
+killall SystemUIServer
+
