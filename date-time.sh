@@ -2,6 +2,12 @@
 
 # See: https://www.tech-otaku.com/mac/setting-the-date-and-time-format-for-the-macos-menu-bar-clock-using-terminal/
 
+# Exit with error if installed macOS version is not macOS 10.15 Catalina or earlier
+    if [ $(system_profiler SPSoftwareDataType | awk '/System Version/ {print $4}' | cut -d . -f 1) -ge 11 ]; then
+        printf "\nERROR: * * * For use with macOS 10.15 Catalina and earlier * * * \n\n"
+        exit 1
+    fi
+
 # System Preferences > Date & Time > Time options
     # Analogue
     #defaults write com.apple.menuextra.clock IsAnalog -bool true
